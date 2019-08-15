@@ -1,0 +1,6 @@
+{
+    "name": "My Express firebase app - Production",
+    "mail": {
+        "host": "prod-mail-serever"
+    }
+}
