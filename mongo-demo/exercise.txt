@@ -1,0 +1,13 @@
+mongoimport --db mongo-exercises --collection courses --drop --file exercise-data.json --jsonArray
+
+mongoimport --host mongodb+srv://cluster0-xbqqh.mongodb.net --ssl --username appuser --password appuser --authenticationDatabase admin --db mongo-exercises --collection courses --type json --file exercise-data.json
+mongoimport --host Cluster0-shard-0/cluster0-shard-00-00-xbqqh.mongodb.net:27017,cluster0-shard-00-01-xbqqh.mongodb.net:27017,cluster0-shard-00-02-xbqqh.mongodb.net:27017 --ssl --username appuser --password <PASSWORD> --authenticationDatabase admin --db <DATABASE> --collection <COLLECTION> --type <FILETYPE> --file <FILENAME>
+
+mongoimport --authenticationDatabase admin --db mongo-exercises --collection courses --type json --file exercise-data.json
+
+mongostat --host mongodb+srv://cluster0-xbqqh.mongodb.net --ssl --username appuser --password appuser --authenticationDatabase admin 
+
+mongoimport --host cluster0-shard-00-00-xbqqh.mongodb.net:27017 --db mongo-exercises --type json --file C:\GIT\NodeLearning\mongo-demo\exercise-data.json --jasonArray --authenticationDatabase admin --ssl --username appuser --password appuser
+
+
+mongo "mongodb+srv://cluster0-xbqqh.mongodb.net/test" --username <username>
